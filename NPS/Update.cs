@@ -108,12 +108,12 @@ namespace NPS
             {
                 var response = (error.Response as HttpWebResponse);
                 if (response != null && response.StatusCode == HttpStatusCode.NotFound) MessageBox.Show("No patches for title");
-                else MessageBox.Show("Unknown error");
+                else MessageBox.Show("Erro Desconhecido");
                 this.Close();
             }
             catch (Exception err)
             {
-                MessageBox.Show("Unknown error");
+                MessageBox.Show("Erro Desconhecido");
                 this.Close();
             }
         }
@@ -149,7 +149,7 @@ namespace NPS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (newItem == null) MessageBox.Show("Unable to download. Some error occured");
+            if (newItem == null) MessageBox.Show("Impossivel baixar. Algum erro aconteceu.");
             else result.Invoke(newItem);
             this.Close();
         }

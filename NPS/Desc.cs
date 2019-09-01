@@ -77,7 +77,7 @@ namespace NPS
         {
             pb_status.Visible = false;
             richTextBox1.Text = contentJson.desc;
-            label1.Text = contentJson.title_name + " (rating: " + contentJson.Stars + "/5.00)";
+            label1.Text = contentJson.title_name + " (Pontuação: " + contentJson.Stars + "/5.00)";
         }));
         isLoading = false;
     }

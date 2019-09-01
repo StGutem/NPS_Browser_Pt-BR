@@ -65,7 +65,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 23);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -78,7 +78,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.webBrowser1);
             this.Name = "GamePatches";
-            this.Text = "Update";
+            this.Text = "Atualização";
             this.ResumeLayout(false);
 
         }

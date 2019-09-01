@@ -74,7 +74,7 @@ namespace NPS
                 tb_proxyServer.Text = Settings.Instance.proxy.Address.Host;
             }
 
-            lblCacheDate.Text = "Cache date: " + NPCache.I.UpdateDate.ToString();
+            lblCacheDate.Text = "Data do cache: " + NPCache.I.UpdateDate.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -285,7 +285,7 @@ namespace NPS
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show(@"Here you can give parameters to pass to your pkg dec tool. Available variables are: 
+            MessageBox.Show(@"Aqui você pode definir os paramentos a serem passado a sua ferrameta de descompactação do PKG. Os tipos disponiveis são: 
 - {zRifKey}
 - {pkgFile}
 - {gameTitle}
@@ -320,7 +320,7 @@ namespace NPS
             {
                 Invoke(new Action(() =>
                 {
-                    lblCacheDate.Text = "Cache date: " + NPCache.I.UpdateDate.ToString();
+                    lblCacheDate.Text = "Data do cache: " + NPCache.I.UpdateDate.ToString();
                 }));
 
             });

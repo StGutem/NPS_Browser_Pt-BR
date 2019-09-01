@@ -15,12 +15,12 @@ using System.Windows.Forms;
 
 namespace NPS
 {
-    public partial class Library : Form
+    public partial class Biblioteca : Form
     {
 
         List<Item> db;
 
-        public Library(List<Item> db)
+        public Biblioteca(List<Item> db)
         {
             InitializeComponent();
             this.db = db;
@@ -86,7 +86,7 @@ namespace NPS
 
                 if (!found)
                 {
-                    ListViewItem lvi = new ListViewItem(f + " (UNKNOWN PKG)");
+                    ListViewItem lvi = new ListViewItem(f + " (PKG DESCONHECIDO)");
 
                     listView1.Items.Add(lvi);
 
@@ -130,7 +130,7 @@ namespace NPS
 
                 if (!found)
                 {
-                    ListViewItem lvi = new ListViewItem(d + " UNKNOWN");
+                    ListViewItem lvi = new ListViewItem(d + " DESCONHECIDO");
 
                     listView1.Items.Add(lvi);
 
@@ -261,7 +261,7 @@ namespace NPS
             if (itm.isPkg == false) return;
             if (itm.itm == null)
             {
-                MessageBox.Show("Can't unpack unknown pkg");
+                MessageBox.Show("Não é possivel descompactar o PKG.");
                 return;
             }
 

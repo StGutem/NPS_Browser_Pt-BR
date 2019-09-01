@@ -46,7 +46,7 @@
             this.Controls.Add(this.progressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SyncDB";
-            this.Text = "SyncDB";
+            this.Text = "Sincronizando DB";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SyncDB_FormClosing);
             this.Load += new System.EventHandler(this.SyncDB_Load);
             this.ResumeLayout(false);

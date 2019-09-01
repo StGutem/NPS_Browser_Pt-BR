@@ -1,6 +1,6 @@
 ﻿namespace NPS
 {
-    partial class Library
+    partial class Biblioteca
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             "test",
             "test2"}, "High-Definition-Ultra-HD-Wallpaper-96262544.jpg");
             System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("test", "(none)");
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Library));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Biblioteca));
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -53,6 +53,7 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
             this.listView1.FullRowSelect = true;
+            this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
             listViewItem2});
@@ -60,7 +61,7 @@
             this.listView1.Location = new System.Drawing.Point(5, 29);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(929, 623);
+            this.listView1.Size = new System.Drawing.Size(895, 623);
             this.listView1.SmallImageList = this.imageList1;
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -91,11 +92,11 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Image = global::NPS.Properties.Resources.opened_folder;
-            this.button1.Location = new System.Drawing.Point(940, 30);
+            this.button1.Location = new System.Drawing.Point(906, 30);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(73, 42);
+            this.button1.Size = new System.Drawing.Size(107, 42);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Open directory";
+            this.button1.Text = "Abrir Pasta";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -104,11 +105,11 @@
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Image = global::NPS.Properties.Resources.menu_cancel;
-            this.button2.Location = new System.Drawing.Point(940, 78);
+            this.button2.Location = new System.Drawing.Point(906, 78);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 39);
+            this.button2.Size = new System.Drawing.Size(109, 39);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Delete";
+            this.button2.Text = "Apagar";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -118,11 +119,11 @@
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.Enabled = false;
             this.button3.Image = global::NPS.Properties.Resources.menu_unpack;
-            this.button3.Location = new System.Drawing.Point(940, 123);
+            this.button3.Location = new System.Drawing.Point(906, 123);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 43);
+            this.button3.Size = new System.Drawing.Size(109, 43);
             this.button3.TabIndex = 4;
-            this.button3.Text = "Unpack PKG";
+            this.button3.Text = "Descompactar PKG";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -131,16 +132,16 @@
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Image = global::NPS.Properties.Resources.menu_reload;
-            this.button4.Location = new System.Drawing.Point(940, 193);
+            this.button4.Location = new System.Drawing.Point(906, 193);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 43);
+            this.button4.Size = new System.Drawing.Size(109, 43);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Refresh";
+            this.button4.Text = "Atualizar";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Library
+            // Biblioteca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -151,8 +152,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
-            this.Name = "Library";
-            this.Text = "Library";
+            this.Name = "Biblioteca";
+            this.Text = "Biblioteca";
             this.Load += new System.EventHandler(this.Library_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

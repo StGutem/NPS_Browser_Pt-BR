@@ -51,7 +51,7 @@ namespace NPS
 
                 if (result.Count == 0)
                 {
-                    MessageBox.Show("No comp pack found");
+                    MessageBox.Show("Nenhum CompPack encontrado");
                     this.Close();
                 }
             }

@@ -36,3 +36,14 @@ Log de Mudanças
 Changelog
 
 Log de Mudanças
+
+Options.cs
+#Linha 288
+Here you can give parameters to pass to your pkg dec tool. Available variables are
+
+Aqui você pode definir os paramentos a serem passado a sua ferrameta de descompactação do PKG. Os tipos disponiveis são:
+
+CompPack.cs[Design]
+When downloading CompPack for patches, Base CompPack will be downloaded automatically
+
+A base do CompPAck será baixada automaticamente enquanto os patches estão sendo baixados

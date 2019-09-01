@@ -38,7 +38,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(12, 12);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(453, 21);
+            this.comboBox1.Size = new System.Drawing.Size(465, 21);
             this.comboBox1.TabIndex = 0;
             // 
             // button1
@@ -56,16 +56,16 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(452, 13);
+            this.label1.Size = new System.Drawing.Size(467, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "When downloading CompPack for patches, Base CompPack will be downloaded automatic" +
-    "ally";
+            this.label1.Text = "A base do CompPAck será baixada automaticamente enquanto os patches estão sendo b" +
+    "aixados";
             // 
             // CompPack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 84);
+            this.ClientSize = new System.Drawing.Size(489, 84);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);

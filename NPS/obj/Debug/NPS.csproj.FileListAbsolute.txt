@@ -13,4 +13,4 @@ C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.csproj.GenerateResource.cach
 C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.csproj.CoreCompileInputs.cache
 C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS_Browser.exe
 C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS_Browser.pdb
-C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.Biblioteca.resources
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.Library.resources

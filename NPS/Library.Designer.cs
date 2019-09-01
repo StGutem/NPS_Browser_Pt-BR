@@ -1,6 +1,6 @@
 ﻿namespace NPS
 {
-    partial class Biblioteca
+    partial class Library
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             "test",
             "test2"}, "High-Definition-Ultra-HD-Wallpaper-96262544.jpg");
             System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("test", "(none)");
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Biblioteca));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Library));
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -141,7 +141,7 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Biblioteca
+            // Library
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,7 +152,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
-            this.Name = "Biblioteca";
+            this.Name = "Library";
             this.Text = "Biblioteca";
             this.Load += new System.EventHandler(this.Library_Load);
             this.ResumeLayout(false);

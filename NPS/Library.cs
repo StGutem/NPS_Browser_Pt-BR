@@ -15,12 +15,12 @@ using System.Windows.Forms;
 
 namespace NPS
 {
-    public partial class Biblioteca : Form
+    public partial class Library : Form
     {
 
         List<Item> db;
 
-        public Biblioteca(List<Item> db)
+        public Library(List<Item> db)
         {
             InitializeComponent();
             this.db = db;

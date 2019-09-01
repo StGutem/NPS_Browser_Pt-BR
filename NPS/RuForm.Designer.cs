@@ -29,6 +29,8 @@ namespace NPS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            PresentationControls.CheckBoxProperties checkBoxProperties3 = new PresentationControls.CheckBoxProperties();
+            PresentationControls.CheckBoxProperties checkBoxProperties1 = new PresentationControls.CheckBoxProperties();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,6 +99,9 @@ namespace NPS
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.cmbType = new PresentationControls.CheckBoxComboBox();
+            this.cmbRegion = new PresentationControls.CheckBoxComboBox();
+            this.lstDownloadStatus = new ListViewEmbeddedControls.ListViewEx();
             this.colDownloadTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colDownloadSpeed = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colDownloadStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -119,6 +124,7 @@ namespace NPS
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,14 +166,14 @@ namespace NPS
             this.reloadToolStripMenuItem.Image = global::NPS.Properties.Resources.menu_reload;
             this.reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
             this.reloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.reloadToolStripMenuItem.Text = "Syncronizar";
+            this.reloadToolStripMenuItem.Text = "Sincronizar";
             this.reloadToolStripMenuItem.Click += new System.EventHandler(this.Sync);
             // 
             // ts_changeLog
             // 
             this.ts_changeLog.Name = "ts_changeLog";
             this.ts_changeLog.Size = new System.Drawing.Size(180, 22);
-            this.ts_changeLog.Text = "Log de Mudanças";
+            this.ts_changeLog.Text = "Log de mudanças";
             this.ts_changeLog.Click += new System.EventHandler(this.ts_changeLog_Click);
             // 
             // toolStripSeparator1
@@ -191,7 +197,7 @@ namespace NPS
             this.changelogToolStripMenuItem});
             this.downloadUpdateToolStripMenuItem.Name = "downloadUpdateToolStripMenuItem";
             this.downloadUpdateToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
-            this.downloadUpdateToolStripMenuItem.Text = "Download update";
+            this.downloadUpdateToolStripMenuItem.Text = "Baixar atualização";
             this.downloadUpdateToolStripMenuItem.Visible = false;
             // 
             // downloadToolStripMenuItem
@@ -205,7 +211,7 @@ namespace NPS
             // 
             this.changelogToolStripMenuItem.Name = "changelogToolStripMenuItem";
             this.changelogToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.changelogToolStripMenuItem.Text = "Log de Mudanças";
+            this.changelogToolStripMenuItem.Text = "Log de mudanças";
             this.changelogToolStripMenuItem.Click += new System.EventHandler(this.changelogToolStripMenuItem_Click);
             // 
             // showDescriptionPanelToolStripMenuItem
@@ -286,58 +292,58 @@ namespace NPS
             this.toggleDownloadedToolStripMenuItem,
             this.toolStripMenuItem1});
             this.lstTitlesMenuStrip.Name = "contextMenuStrip2";
-            this.lstTitlesMenuStrip.Size = new System.Drawing.Size(197, 158);
+            this.lstTitlesMenuStrip.Size = new System.Drawing.Size(195, 158);
             // 
             // downloadAndUnpackToolStripMenuItem
             // 
             this.downloadAndUnpackToolStripMenuItem.Image = global::NPS.Properties.Resources.menu_unpack;
             this.downloadAndUnpackToolStripMenuItem.Name = "downloadAndUnpackToolStripMenuItem";
-            this.downloadAndUnpackToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.downloadAndUnpackToolStripMenuItem.Text = "Download and Unpack";
+            this.downloadAndUnpackToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.downloadAndUnpackToolStripMenuItem.Text = "Baixar e Descompactar";
             this.downloadAndUnpackToolStripMenuItem.Click += new System.EventHandler(this.btnDownload_Click);
             // 
             // showTitleDlcToolStripMenuItem
             // 
             this.showTitleDlcToolStripMenuItem.Image = global::NPS.Properties.Resources.menu_show_dlc;
             this.showTitleDlcToolStripMenuItem.Name = "showTitleDlcToolStripMenuItem";
-            this.showTitleDlcToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.showTitleDlcToolStripMenuItem.Text = "Show Title DLCs";
+            this.showTitleDlcToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.showTitleDlcToolStripMenuItem.Text = "Mostrar DLCs";
             this.showTitleDlcToolStripMenuItem.Click += new System.EventHandler(this.showTitleDlcToolStripMenuItem_Click);
             // 
             // downloadAllDlcsToolStripMenuItem
             // 
             this.downloadAllDlcsToolStripMenuItem.Image = global::NPS.Properties.Resources.menu_download_dlc;
             this.downloadAllDlcsToolStripMenuItem.Name = "downloadAllDlcsToolStripMenuItem";
-            this.downloadAllDlcsToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.downloadAllDlcsToolStripMenuItem.Text = "Download All DLCs";
+            this.downloadAllDlcsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.downloadAllDlcsToolStripMenuItem.Text = "Baixar todas as DLCs";
             this.downloadAllDlcsToolStripMenuItem.Click += new System.EventHandler(this.downloadAllDlcsToolStripMenuItem_Click);
             // 
             // downloadAllToolStripMenuItem
             // 
             this.downloadAllToolStripMenuItem.Name = "downloadAllToolStripMenuItem";
-            this.downloadAllToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.downloadAllToolStripMenuItem.Text = "Download All";
+            this.downloadAllToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.downloadAllToolStripMenuItem.Text = "Baixar tudo";
             this.downloadAllToolStripMenuItem.Click += new System.EventHandler(this.downloadAllToolStripMenuItem_Click);
             // 
             // checkForPatchesToolStripMenuItem
             // 
             this.checkForPatchesToolStripMenuItem.Name = "checkForPatchesToolStripMenuItem";
-            this.checkForPatchesToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.checkForPatchesToolStripMenuItem.Text = "Check for patches";
+            this.checkForPatchesToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.checkForPatchesToolStripMenuItem.Text = "Checar por patchs";
             this.checkForPatchesToolStripMenuItem.Click += new System.EventHandler(this.checkForPatchesToolStripMenuItem_Click);
             // 
             // toggleDownloadedToolStripMenuItem
             // 
             this.toggleDownloadedToolStripMenuItem.Name = "toggleDownloadedToolStripMenuItem";
-            this.toggleDownloadedToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.toggleDownloadedToolStripMenuItem.Text = "Toggle Download Mark";
+            this.toggleDownloadedToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.toggleDownloadedToolStripMenuItem.Text = "Marcar como baixado";
             this.toggleDownloadedToolStripMenuItem.Click += new System.EventHandler(this.toggleDownloadedToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(196, 22);
-            this.toolStripMenuItem1.Text = "Download CompPack";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
+            this.toolStripMenuItem1.Text = "Baixar CompPack";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // txtSearch
@@ -384,9 +390,9 @@ namespace NPS
             this.rbnDLC.Enabled = false;
             this.rbnDLC.Location = new System.Drawing.Point(195, 3);
             this.rbnDLC.Name = "rbnDLC";
-            this.rbnDLC.Size = new System.Drawing.Size(46, 17);
+            this.rbnDLC.Size = new System.Drawing.Size(51, 17);
             this.rbnDLC.TabIndex = 9;
-            this.rbnDLC.Text = "DLC";
+            this.rbnDLC.Text = "DLCs";
             this.rbnDLC.UseVisualStyleBackColor = true;
             this.rbnDLC.CheckedChanged += new System.EventHandler(this.rbnDLC_CheckedChanged);
             // 
@@ -430,14 +436,14 @@ namespace NPS
             this.retryUnpackToolStripMenuItem,
             this.clearCompletedToolStripMenuItem});
             this.lstDownloadStatusMenuStrip.Name = "contextMenuStrip1";
-            this.lstDownloadStatusMenuStrip.Size = new System.Drawing.Size(164, 116);
+            this.lstDownloadStatusMenuStrip.Size = new System.Drawing.Size(213, 116);
             // 
             // pauseToolStripMenuItem
             // 
             this.pauseToolStripMenuItem.Image = global::NPS.Properties.Resources.menu_pause;
             this.pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
-            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.pauseToolStripMenuItem.Text = "Pause";
+            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.pauseToolStripMenuItem.Text = "Pausar";
             this.pauseToolStripMenuItem.Click += new System.EventHandler(this.pauseToolStripMenuItem_Click);
             // 
             // resumeToolStripMenuItem
@@ -445,32 +451,32 @@ namespace NPS
             this.resumeToolStripMenuItem.Image = global::NPS.Properties.Resources.menu_resume;
             this.resumeToolStripMenuItem.Margin = new System.Windows.Forms.Padding(1);
             this.resumeToolStripMenuItem.Name = "resumeToolStripMenuItem";
-            this.resumeToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.resumeToolStripMenuItem.Text = "Resume";
+            this.resumeToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.resumeToolStripMenuItem.Text = "Resumir";
             this.resumeToolStripMenuItem.Click += new System.EventHandler(this.resumeToolStripMenuItem_Click);
             // 
             // cancelToolStripMenuItem
             // 
             this.cancelToolStripMenuItem.Image = global::NPS.Properties.Resources.menu_cancel;
             this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.cancelToolStripMenuItem.Text = "Cancel";
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.cancelToolStripMenuItem.Text = "Cancelar";
             this.cancelToolStripMenuItem.Click += new System.EventHandler(this.cancelToolStripMenuItem_Click);
             // 
             // retryUnpackToolStripMenuItem
             // 
             this.retryUnpackToolStripMenuItem.Image = global::NPS.Properties.Resources.menu_retry;
             this.retryUnpackToolStripMenuItem.Name = "retryUnpackToolStripMenuItem";
-            this.retryUnpackToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.retryUnpackToolStripMenuItem.Text = "Retry Unpack";
+            this.retryUnpackToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.retryUnpackToolStripMenuItem.Text = "Re-tentar Decompactação";
             this.retryUnpackToolStripMenuItem.Click += new System.EventHandler(this.retryUnpackToolStripMenuItem_Click);
             // 
             // clearCompletedToolStripMenuItem
             // 
             this.clearCompletedToolStripMenuItem.Image = global::NPS.Properties.Resources.menu_clear;
             this.clearCompletedToolStripMenuItem.Name = "clearCompletedToolStripMenuItem";
-            this.clearCompletedToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.clearCompletedToolStripMenuItem.Text = "Clear Completed";
+            this.clearCompletedToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.clearCompletedToolStripMenuItem.Text = "Limpar Completados";
             this.clearCompletedToolStripMenuItem.Click += new System.EventHandler(this.clearCompletedToolStripMenuItem_Click);
             // 
             // timer1
@@ -495,7 +501,7 @@ namespace NPS
             this.lnkOpenRenaScene.Size = new System.Drawing.Size(212, 17);
             this.lnkOpenRenaScene.TabIndex = 17;
             this.lnkOpenRenaScene.TabStop = true;
-            this.lnkOpenRenaScene.Text = "Abrir imagens no Google";
+            this.lnkOpenRenaScene.Text = "Abrir imagens do google";
             this.lnkOpenRenaScene.Visible = false;
             this.lnkOpenRenaScene.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkOpenRenaScene_LinkClicked);
             // 
@@ -558,6 +564,8 @@ namespace NPS
             // 
             // pnlSearch
             // 
+            this.pnlSearch.Controls.Add(this.cmbType);
+            this.pnlSearch.Controls.Add(this.cmbRegion);
             this.pnlSearch.Controls.Add(this.flowLayoutPanel3);
             this.pnlSearch.Controls.Add(this.flowLayoutPanel1);
             this.pnlSearch.Controls.Add(this.txtSearch);
@@ -620,7 +628,7 @@ namespace NPS
             // 
             this.rbnThemes.AutoSize = true;
             this.rbnThemes.Enabled = false;
-            this.rbnThemes.Location = new System.Drawing.Point(247, 3);
+            this.rbnThemes.Location = new System.Drawing.Point(252, 3);
             this.rbnThemes.Name = "rbnThemes";
             this.rbnThemes.Size = new System.Drawing.Size(57, 17);
             this.rbnThemes.TabIndex = 10;
@@ -632,7 +640,7 @@ namespace NPS
             // 
             this.rbnUpdates.AutoSize = true;
             this.rbnUpdates.Enabled = false;
-            this.rbnUpdates.Location = new System.Drawing.Point(310, 3);
+            this.rbnUpdates.Location = new System.Drawing.Point(315, 3);
             this.rbnUpdates.Name = "rbnUpdates";
             this.rbnUpdates.Size = new System.Drawing.Size(85, 17);
             this.rbnUpdates.TabIndex = 12;
@@ -644,22 +652,22 @@ namespace NPS
             // rbnDownloaded
             // 
             this.rbnDownloaded.AutoSize = true;
-            this.rbnDownloaded.Location = new System.Drawing.Point(131, 0);
+            this.rbnDownloaded.Location = new System.Drawing.Point(155, 0);
             this.rbnDownloaded.Name = "rbnDownloaded";
-            this.rbnDownloaded.Size = new System.Drawing.Size(68, 17);
+            this.rbnDownloaded.Size = new System.Drawing.Size(63, 17);
             this.rbnDownloaded.TabIndex = 24;
-            this.rbnDownloaded.Text = "Baixados";
+            this.rbnDownloaded.Text = "Baixado";
             this.rbnDownloaded.UseVisualStyleBackColor = true;
             this.rbnDownloaded.CheckedChanged += new System.EventHandler(this.rbnDownloaded_CheckedChanged);
             // 
             // rbnUndownloaded
             // 
             this.rbnUndownloaded.AutoSize = true;
-            this.rbnUndownloaded.Location = new System.Drawing.Point(40, 0);
+            this.rbnUndownloaded.Location = new System.Drawing.Point(61, 0);
             this.rbnUndownloaded.Name = "rbnUndownloaded";
-            this.rbnUndownloaded.Size = new System.Drawing.Size(90, 17);
+            this.rbnUndownloaded.Size = new System.Drawing.Size(85, 17);
             this.rbnUndownloaded.TabIndex = 23;
-            this.rbnUndownloaded.Text = "Não-baixados";
+            this.rbnUndownloaded.Text = "Não-baixado";
             this.rbnUndownloaded.UseVisualStyleBackColor = true;
             this.rbnUndownloaded.CheckedChanged += new System.EventHandler(this.rbnUndownloaded_CheckedChanged);
             // 
@@ -669,10 +677,10 @@ namespace NPS
             this.rbnAll.Checked = true;
             this.rbnAll.Location = new System.Drawing.Point(0, 0);
             this.rbnAll.Name = "rbnAll";
-            this.rbnAll.Size = new System.Drawing.Size(36, 17);
+            this.rbnAll.Size = new System.Drawing.Size(55, 17);
             this.rbnAll.TabIndex = 22;
             this.rbnAll.TabStop = true;
-            this.rbnAll.Text = "All";
+            this.rbnAll.Text = "Todos";
             this.rbnAll.UseVisualStyleBackColor = true;
             this.rbnAll.CheckedChanged += new System.EventHandler(this.rbnAll_CheckedChanged);
             // 
@@ -681,11 +689,11 @@ namespace NPS
             this.chkUnless.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkUnless.AutoSize = true;
             this.chkUnless.Enabled = false;
-            this.chkUnless.Location = new System.Drawing.Point(60, 24);
+            this.chkUnless.Location = new System.Drawing.Point(61, 23);
             this.chkUnless.Name = "chkUnless";
-            this.chkUnless.Size = new System.Drawing.Size(110, 17);
+            this.chkUnless.Size = new System.Drawing.Size(108, 17);
             this.chkUnless.TabIndex = 21;
-            this.chkUnless.Text = "Exceto nova DLC";
+            this.chkUnless.Text = "Sem novas DLCs";
             this.chkUnless.UseVisualStyleBackColor = true;
             this.chkUnless.CheckedChanged += new System.EventHandler(this.chkUnless_CheckedChanged);
             // 
@@ -693,11 +701,11 @@ namespace NPS
             // 
             this.chkHideDownloaded.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkHideDownloaded.AutoSize = true;
-            this.chkHideDownloaded.Location = new System.Drawing.Point(60, 43);
+            this.chkHideDownloaded.Location = new System.Drawing.Point(61, 41);
             this.chkHideDownloaded.Name = "chkHideDownloaded";
-            this.chkHideDownloaded.Size = new System.Drawing.Size(117, 17);
+            this.chkHideDownloaded.Size = new System.Drawing.Size(105, 17);
             this.chkHideDownloaded.TabIndex = 20;
-            this.chkHideDownloaded.Text = "Esconder Baixados";
+            this.chkHideDownloaded.Text = "Ocultar baixados";
             this.chkHideDownloaded.UseVisualStyleBackColor = true;
             this.chkHideDownloaded.Visible = false;
             this.chkHideDownloaded.CheckedChanged += new System.EventHandler(this.chkHideDownloaded_CheckedChanged);
@@ -735,6 +743,10 @@ namespace NPS
             this.splitContainer1.Panel1.Controls.Add(this.button2);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.lstDownloadStatus);
             this.splitContainer1.Size = new System.Drawing.Size(1073, 263);
             this.splitContainer1.SplitterDistance = 33;
             this.splitContainer1.TabIndex = 15;
@@ -818,14 +830,60 @@ namespace NPS
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.resumeToolStripMenuItem_Click);
             // 
+            // cmbType
+            // 
+            this.cmbType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            checkBoxProperties3.AutoSize = true;
+            checkBoxProperties3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmbType.CheckBoxProperties = checkBoxProperties3;
+            this.cmbType.DisplayMemberSingleItem = "";
+            this.cmbType.FormattingEnabled = true;
+            this.cmbType.Location = new System.Drawing.Point(549, 3);
+            this.cmbType.Name = "cmbType";
+            this.cmbType.Size = new System.Drawing.Size(152, 21);
+            this.cmbType.TabIndex = 20;
+            this.cmbType.SelectedIndexChanged += new System.EventHandler(this.cmbType_SelectedIndexChanged);
+            // 
+            // cmbRegion
+            // 
+            this.cmbRegion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            checkBoxProperties1.AutoSize = true;
+            checkBoxProperties1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmbRegion.CheckBoxProperties = checkBoxProperties1;
+            this.cmbRegion.DisplayMemberSingleItem = "";
+            this.cmbRegion.FormattingEnabled = true;
+            this.cmbRegion.Location = new System.Drawing.Point(707, 3);
+            this.cmbRegion.MaxDropDownItems = 5;
+            this.cmbRegion.Name = "cmbRegion";
+            this.cmbRegion.Size = new System.Drawing.Size(138, 21);
+            this.cmbRegion.TabIndex = 19;
+            // 
+            // lstDownloadStatus
+            // 
+            this.lstDownloadStatus.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colDownloadTitle,
+            this.colDownloadSpeed,
+            this.colDownloadStatus,
+            this.colDownloadProgress});
+            this.lstDownloadStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstDownloadStatus.FullRowSelect = true;
+            this.lstDownloadStatus.HideSelection = false;
+            this.lstDownloadStatus.Location = new System.Drawing.Point(0, 0);
+            this.lstDownloadStatus.Name = "lstDownloadStatus";
+            this.lstDownloadStatus.Size = new System.Drawing.Size(1073, 226);
+            this.lstDownloadStatus.TabIndex = 14;
+            this.lstDownloadStatus.UseCompatibleStateImageBehavior = false;
+            this.lstDownloadStatus.View = System.Windows.Forms.View.Details;
+            this.lstDownloadStatus.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lstDownloadStatus_KeyDown);
+            // 
             // colDownloadTitle
             // 
-            this.colDownloadTitle.Text = "Title";
+            this.colDownloadTitle.Text = "Titulo";
             this.colDownloadTitle.Width = 457;
             // 
             // colDownloadSpeed
             // 
-            this.colDownloadSpeed.Text = "Speed";
+            this.colDownloadSpeed.Text = "Velocidade";
             this.colDownloadSpeed.Width = 112;
             // 
             // colDownloadStatus
@@ -870,6 +928,7 @@ namespace NPS
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);

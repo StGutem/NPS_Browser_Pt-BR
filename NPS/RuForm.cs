@@ -44,7 +44,7 @@ namespace NPS
 
             if (string.IsNullOrEmpty(Settings.Instance.PSVUri) && string.IsNullOrEmpty(Settings.Instance.PSVDLCUri))
             {
-                MessageBox.Show("A aplicação não fornece nenhum link para arquivos externos ou mecanismos de decriptação.\r\nVocê precisa especificar um arquivo TSV(Tab Splitted Text) com os seus links pesoais para os PKGs que você possui.\r\n\r\nFormato: TitleId Region Name Pkg Key", "Aviso Legal!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("A aplicação não fornece nenhum link para arquivos externos ou mecanismos de decriptação.\r\nVocê precisa especificar um arquivo TSV(Tab Splitted Text) com os seus links pesoais para os PKGs que você possui.\r\n\r\nFormato: TitleId Region Name Pkg Key", "AVISO LEGAL!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Options o = new Options(this);
                 o.ShowDialog();
             }
@@ -555,7 +555,7 @@ namespace NPS
         {
             if (string.IsNullOrEmpty(Settings.Instance.downloadDir) || string.IsNullOrEmpty(Settings.Instance.pkgPath))
             {
-                MessageBox.Show("Você não tem uma configuração correta.", "Opa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Você não tem uma configuração correta.", "Whoops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Options o = new Options(this);
                 o.ShowDialog();
                 return;
@@ -1025,7 +1025,7 @@ namespace NPS
         {
             if (string.IsNullOrEmpty(Settings.Instance.HMACKey))
             {
-                MessageBox.Show("No hmackey");
+                MessageBox.Show("Sem hmackey");
                 return;
             }
 
@@ -1144,7 +1144,7 @@ namespace NPS
         {
             if (string.IsNullOrEmpty(Settings.Instance.compPackUrl))
             {
-                MessageBox.Show("No CompPack url");
+                MessageBox.Show("Sem CompPack url");
                 return;
             }
 

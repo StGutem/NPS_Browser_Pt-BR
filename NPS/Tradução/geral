@@ -1,0 +1,38 @@
+RuForm.cs
+#Linha 47
+Application did not provide any links to external files or decrypt mechanism.\r\nYou need to specify tsv (tab splitted text) file with your personal links to pkg files on your own.\r\n\r\nFormat: TitleId Region Name Pkg Key
+
+A aplicação não fornece nenhum link para arquivos externos ou mecanismos de decriptação.\r\nVocê precisa especificar um arquivo TSV(Tab Splitted Text) com os seus links pesoais para os PKGs que você possui.\r\n\r\nFormato: TitleId Region Name Pkg Key
+
+#Linha 265
+
+
+#Linha 558
+You don't have a proper configuration
+
+Você não tem uma configuração correta
+
+#Linha 661
+RAP NOT REQUIRED, use ReActPSN/PSNPatch
+
+RAP não é necessario, use o ReActPSN/PSNPatch
+
+#Linha 663
+UNLOCK/LICENSE BY DLC
+
+Desbloqueado/Licenciado por DLC
+
+#Linha 663
+UNLOCK BY DLC
+
+Desbloqueado por DLC
+
+#Linha 1008
+Changelog
+
+Log de Mudanças
+
+#Linha 1021
+Changelog
+
+Log de Mudanças

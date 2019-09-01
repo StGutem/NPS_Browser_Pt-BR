@@ -37,56 +37,10 @@ namespace NPS
             this.label3 = new System.Windows.Forms.Label();
             this.textParams = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.lbl_psvuri = new System.Windows.Forms.Label();
-            this.tb_psvuri = new System.Windows.Forms.TextBox();
-            this.btn_psvuri = new System.Windows.Forms.Button();
-            this.lbl_psvdlcuri = new System.Windows.Forms.Label();
-            this.tb_psvdlcuri = new System.Windows.Forms.TextBox();
-            this.btn_psvdlcuri = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.lbl_psmuri = new System.Windows.Forms.Label();
-            this.tb_psmuri = new System.Windows.Forms.TextBox();
-            this.btn_psmuri = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.lbl_psxuri = new System.Windows.Forms.Label();
-            this.tb_psxuri = new System.Windows.Forms.TextBox();
-            this.btn_psxuri = new System.Windows.Forms.Button();
-            this.lbl_pspuri = new System.Windows.Forms.Label();
-            this.tb_pspuri = new System.Windows.Forms.TextBox();
-            this.btn_pspuri = new System.Windows.Forms.Button();
-            this.lbl_ps3uri = new System.Windows.Forms.Label();
-            this.tb_ps3uri = new System.Windows.Forms.TextBox();
-            this.btn_ps3uri = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btn_ps4dlcuri = new System.Windows.Forms.Button();
-            this.lbl_ps4dlcuri = new System.Windows.Forms.Label();
-            this.tb_ps4dlcuri = new System.Windows.Forms.TextBox();
-            this.btn_ps3dlcuri = new System.Windows.Forms.Button();
-            this.lbl_ps3dlcuri = new System.Windows.Forms.Label();
-            this.tb_ps3dlcuri = new System.Windows.Forms.TextBox();
-            this.btn_pspdlcuri = new System.Windows.Forms.Button();
-            this.lbl_pspdlcuri = new System.Windows.Forms.Label();
-            this.tb_pspdlcuri = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lbl_ps4uri = new System.Windows.Forms.Label();
-            this.tb_ps4uri = new System.Windows.Forms.TextBox();
-            this.btn_ps4uri = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btn_ps4thmuri = new System.Windows.Forms.Button();
-            this.lbl_ps4thmuri = new System.Windows.Forms.Label();
-            this.tb_ps4thmuri = new System.Windows.Forms.TextBox();
-            this.btn_pspthmuri = new System.Windows.Forms.Button();
-            this.lbl_pspthmuri = new System.Windows.Forms.Label();
-            this.tb_pspthmuri = new System.Windows.Forms.TextBox();
-            this.lbl_psvthmuri = new System.Windows.Forms.Label();
-            this.btn_ps3thmuri = new System.Windows.Forms.Button();
-            this.lbl_ps3thmuri = new System.Windows.Forms.Label();
-            this.tb_psvthmuri = new System.Windows.Forms.TextBox();
-            this.btn_psvthmuri = new System.Windows.Forms.Button();
-            this.tb_ps3thmuri = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tb_ps3avataruri = new System.Windows.Forms.TextBox();
             this.lbl_ps3avataruri = new System.Windows.Forms.Label();
@@ -112,14 +66,61 @@ namespace NPS
             this.tb_compPack = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tb_compackPatch = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btn_ps4dlcuri = new System.Windows.Forms.Button();
+            this.lbl_ps4dlcuri = new System.Windows.Forms.Label();
+            this.tb_ps4dlcuri = new System.Windows.Forms.TextBox();
+            this.btn_ps3dlcuri = new System.Windows.Forms.Button();
+            this.lbl_ps3dlcuri = new System.Windows.Forms.Label();
+            this.tb_ps3dlcuri = new System.Windows.Forms.TextBox();
+            this.btn_pspdlcuri = new System.Windows.Forms.Button();
+            this.lbl_pspdlcuri = new System.Windows.Forms.Label();
+            this.tb_pspdlcuri = new System.Windows.Forms.TextBox();
+            this.lbl_psvdlcuri = new System.Windows.Forms.Label();
+            this.tb_psvdlcuri = new System.Windows.Forms.TextBox();
+            this.btn_psvdlcuri = new System.Windows.Forms.Button();
+            this.lbl_ps4uri = new System.Windows.Forms.Label();
+            this.tb_ps4uri = new System.Windows.Forms.TextBox();
+            this.btn_ps4uri = new System.Windows.Forms.Button();
+            this.tb_psvuri = new System.Windows.Forms.TextBox();
+            this.lbl_psvuri = new System.Windows.Forms.Label();
+            this.btn_psvuri = new System.Windows.Forms.Button();
+            this.tb_psmuri = new System.Windows.Forms.TextBox();
+            this.lbl_psmuri = new System.Windows.Forms.Label();
+            this.btn_psmuri = new System.Windows.Forms.Button();
+            this.tb_psxuri = new System.Windows.Forms.TextBox();
+            this.lbl_pspuri = new System.Windows.Forms.Label();
+            this.lbl_ps3uri = new System.Windows.Forms.Label();
+            this.btn_pspuri = new System.Windows.Forms.Button();
+            this.lbl_psxuri = new System.Windows.Forms.Label();
+            this.tb_pspuri = new System.Windows.Forms.TextBox();
+            this.tb_ps3uri = new System.Windows.Forms.TextBox();
+            this.btn_ps3uri = new System.Windows.Forms.Button();
+            this.btn_psxuri = new System.Windows.Forms.Button();
+            this.btn_ps4thmuri = new System.Windows.Forms.Button();
+            this.lbl_ps4thmuri = new System.Windows.Forms.Label();
+            this.tb_ps4thmuri = new System.Windows.Forms.TextBox();
+            this.btn_pspthmuri = new System.Windows.Forms.Button();
+            this.lbl_pspthmuri = new System.Windows.Forms.Label();
+            this.tb_pspthmuri = new System.Windows.Forms.TextBox();
+            this.lbl_psvthmuri = new System.Windows.Forms.Label();
+            this.btn_ps3thmuri = new System.Windows.Forms.Button();
+            this.lbl_ps3thmuri = new System.Windows.Forms.Label();
+            this.tb_psvthmuri = new System.Windows.Forms.TextBox();
+            this.btn_psvthmuri = new System.Windows.Forms.Button();
+            this.tb_ps3thmuri = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonDownload
@@ -193,58 +194,6 @@ namespace NPS
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // lbl_psvuri
-            // 
-            this.lbl_psvuri.AutoSize = true;
-            this.lbl_psvuri.Location = new System.Drawing.Point(9, 22);
-            this.lbl_psvuri.Name = "lbl_psvuri";
-            this.lbl_psvuri.Size = new System.Drawing.Size(45, 13);
-            this.lbl_psvuri.TabIndex = 11;
-            this.lbl_psvuri.Text = "PSV tsv";
-            // 
-            // tb_psvuri
-            // 
-            this.tb_psvuri.Location = new System.Drawing.Point(77, 19);
-            this.tb_psvuri.Name = "tb_psvuri";
-            this.tb_psvuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_psvuri.TabIndex = 0;
-            // 
-            // btn_psvuri
-            // 
-            this.btn_psvuri.Location = new System.Drawing.Point(341, 17);
-            this.btn_psvuri.Name = "btn_psvuri";
-            this.btn_psvuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_psvuri.TabIndex = 1;
-            this.btn_psvuri.Text = "Browse";
-            this.btn_psvuri.UseVisualStyleBackColor = true;
-            this.btn_psvuri.Click += new System.EventHandler(this.btn_psvuri_Click);
-            // 
-            // lbl_psvdlcuri
-            // 
-            this.lbl_psvdlcuri.AutoSize = true;
-            this.lbl_psvdlcuri.Location = new System.Drawing.Point(5, 27);
-            this.lbl_psvdlcuri.Name = "lbl_psvdlcuri";
-            this.lbl_psvdlcuri.Size = new System.Drawing.Size(45, 13);
-            this.lbl_psvdlcuri.TabIndex = 14;
-            this.lbl_psvdlcuri.Text = "PSV tsv";
-            // 
-            // tb_psvdlcuri
-            // 
-            this.tb_psvdlcuri.Location = new System.Drawing.Point(77, 24);
-            this.tb_psvdlcuri.Name = "tb_psvdlcuri";
-            this.tb_psvdlcuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_psvdlcuri.TabIndex = 0;
-            // 
-            // btn_psvdlcuri
-            // 
-            this.btn_psvdlcuri.Location = new System.Drawing.Point(341, 24);
-            this.btn_psvdlcuri.Name = "btn_psvdlcuri";
-            this.btn_psvdlcuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_psvdlcuri.TabIndex = 1;
-            this.btn_psvdlcuri.Text = "Browse";
-            this.btn_psvdlcuri.UseVisualStyleBackColor = true;
-            this.btn_psvdlcuri.Click += new System.EventHandler(this.btn_psvdlcuri_Click);
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -287,32 +236,6 @@ namespace NPS
             0});
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
-            // lbl_psmuri
-            // 
-            this.lbl_psmuri.AutoSize = true;
-            this.lbl_psmuri.Location = new System.Drawing.Point(9, 48);
-            this.lbl_psmuri.Name = "lbl_psmuri";
-            this.lbl_psmuri.Size = new System.Drawing.Size(47, 13);
-            this.lbl_psmuri.TabIndex = 20;
-            this.lbl_psmuri.Text = "PSM tsv";
-            // 
-            // tb_psmuri
-            // 
-            this.tb_psmuri.Location = new System.Drawing.Point(77, 45);
-            this.tb_psmuri.Name = "tb_psmuri";
-            this.tb_psmuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_psmuri.TabIndex = 2;
-            // 
-            // btn_psmuri
-            // 
-            this.btn_psmuri.Location = new System.Drawing.Point(341, 42);
-            this.btn_psmuri.Name = "btn_psmuri";
-            this.btn_psmuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_psmuri.TabIndex = 3;
-            this.btn_psmuri.Text = "Browse";
-            this.btn_psmuri.UseVisualStyleBackColor = true;
-            this.btn_psmuri.Click += new System.EventHandler(this.btn_psmuri_Click);
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -323,387 +246,6 @@ namespace NPS
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "?";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // lbl_psxuri
-            // 
-            this.lbl_psxuri.AutoSize = true;
-            this.lbl_psxuri.Location = new System.Drawing.Point(9, 74);
-            this.lbl_psxuri.Name = "lbl_psxuri";
-            this.lbl_psxuri.Size = new System.Drawing.Size(45, 13);
-            this.lbl_psxuri.TabIndex = 24;
-            this.lbl_psxuri.Text = "PSX tsv";
-            // 
-            // tb_psxuri
-            // 
-            this.tb_psxuri.Location = new System.Drawing.Point(77, 69);
-            this.tb_psxuri.Name = "tb_psxuri";
-            this.tb_psxuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_psxuri.TabIndex = 4;
-            // 
-            // btn_psxuri
-            // 
-            this.btn_psxuri.Location = new System.Drawing.Point(341, 66);
-            this.btn_psxuri.Name = "btn_psxuri";
-            this.btn_psxuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_psxuri.TabIndex = 5;
-            this.btn_psxuri.Text = "Browse";
-            this.btn_psxuri.UseVisualStyleBackColor = true;
-            this.btn_psxuri.Click += new System.EventHandler(this.btn_psxuri_Click);
-            // 
-            // lbl_pspuri
-            // 
-            this.lbl_pspuri.AutoSize = true;
-            this.lbl_pspuri.Location = new System.Drawing.Point(440, 22);
-            this.lbl_pspuri.Name = "lbl_pspuri";
-            this.lbl_pspuri.Size = new System.Drawing.Size(45, 13);
-            this.lbl_pspuri.TabIndex = 27;
-            this.lbl_pspuri.Text = "PSP tsv";
-            // 
-            // tb_pspuri
-            // 
-            this.tb_pspuri.Location = new System.Drawing.Point(487, 18);
-            this.tb_pspuri.Name = "tb_pspuri";
-            this.tb_pspuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_pspuri.TabIndex = 8;
-            // 
-            // btn_pspuri
-            // 
-            this.btn_pspuri.Location = new System.Drawing.Point(751, 16);
-            this.btn_pspuri.Name = "btn_pspuri";
-            this.btn_pspuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_pspuri.TabIndex = 9;
-            this.btn_pspuri.Text = "Browse";
-            this.btn_pspuri.UseVisualStyleBackColor = true;
-            this.btn_pspuri.Click += new System.EventHandler(this.btn_pspuri_Click);
-            // 
-            // lbl_ps3uri
-            // 
-            this.lbl_ps3uri.AutoSize = true;
-            this.lbl_ps3uri.Location = new System.Drawing.Point(440, 47);
-            this.lbl_ps3uri.Name = "lbl_ps3uri";
-            this.lbl_ps3uri.Size = new System.Drawing.Size(44, 13);
-            this.lbl_ps3uri.TabIndex = 33;
-            this.lbl_ps3uri.Text = "PS3 tsv";
-            // 
-            // tb_ps3uri
-            // 
-            this.tb_ps3uri.Location = new System.Drawing.Point(487, 44);
-            this.tb_ps3uri.Name = "tb_ps3uri";
-            this.tb_ps3uri.Size = new System.Drawing.Size(258, 20);
-            this.tb_ps3uri.TabIndex = 6;
-            // 
-            // btn_ps3uri
-            // 
-            this.btn_ps3uri.Location = new System.Drawing.Point(751, 41);
-            this.btn_ps3uri.Name = "btn_ps3uri";
-            this.btn_ps3uri.Size = new System.Drawing.Size(75, 23);
-            this.btn_ps3uri.TabIndex = 7;
-            this.btn_ps3uri.Text = "Browse";
-            this.btn_ps3uri.UseVisualStyleBackColor = true;
-            this.btn_ps3uri.Click += new System.EventHandler(this.btn_ps3uri_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(848, 270);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "TSV files or URL links";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btn_ps4dlcuri);
-            this.groupBox3.Controls.Add(this.lbl_ps4dlcuri);
-            this.groupBox3.Controls.Add(this.tb_ps4dlcuri);
-            this.groupBox3.Controls.Add(this.btn_ps3dlcuri);
-            this.groupBox3.Controls.Add(this.lbl_ps3dlcuri);
-            this.groupBox3.Controls.Add(this.tb_ps3dlcuri);
-            this.groupBox3.Controls.Add(this.btn_pspdlcuri);
-            this.groupBox3.Controls.Add(this.lbl_pspdlcuri);
-            this.groupBox3.Controls.Add(this.tb_pspdlcuri);
-            this.groupBox3.Controls.Add(this.lbl_psvdlcuri);
-            this.groupBox3.Controls.Add(this.tb_psvdlcuri);
-            this.groupBox3.Controls.Add(this.btn_psvdlcuri);
-            this.groupBox3.Location = new System.Drawing.Point(7, 126);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(835, 81);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "DLCs";
-            // 
-            // btn_ps4dlcuri
-            // 
-            this.btn_ps4dlcuri.Location = new System.Drawing.Point(751, 49);
-            this.btn_ps4dlcuri.Name = "btn_ps4dlcuri";
-            this.btn_ps4dlcuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_ps4dlcuri.TabIndex = 44;
-            this.btn_ps4dlcuri.Text = "Browse";
-            this.btn_ps4dlcuri.UseVisualStyleBackColor = true;
-            this.btn_ps4dlcuri.Visible = false;
-            this.btn_ps4dlcuri.Click += new System.EventHandler(this.btn_ps4dlcuri_Click);
-            // 
-            // lbl_ps4dlcuri
-            // 
-            this.lbl_ps4dlcuri.AutoSize = true;
-            this.lbl_ps4dlcuri.Location = new System.Drawing.Point(442, 54);
-            this.lbl_ps4dlcuri.Name = "lbl_ps4dlcuri";
-            this.lbl_ps4dlcuri.Size = new System.Drawing.Size(44, 13);
-            this.lbl_ps4dlcuri.TabIndex = 45;
-            this.lbl_ps4dlcuri.Text = "PS4 tsv";
-            this.lbl_ps4dlcuri.Visible = false;
-            // 
-            // tb_ps4dlcuri
-            // 
-            this.tb_ps4dlcuri.Location = new System.Drawing.Point(487, 51);
-            this.tb_ps4dlcuri.Name = "tb_ps4dlcuri";
-            this.tb_ps4dlcuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_ps4dlcuri.TabIndex = 43;
-            this.tb_ps4dlcuri.Visible = false;
-            // 
-            // btn_ps3dlcuri
-            // 
-            this.btn_ps3dlcuri.Location = new System.Drawing.Point(751, 25);
-            this.btn_ps3dlcuri.Name = "btn_ps3dlcuri";
-            this.btn_ps3dlcuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_ps3dlcuri.TabIndex = 41;
-            this.btn_ps3dlcuri.Text = "Browse";
-            this.btn_ps3dlcuri.UseVisualStyleBackColor = true;
-            // 
-            // lbl_ps3dlcuri
-            // 
-            this.lbl_ps3dlcuri.AutoSize = true;
-            this.lbl_ps3dlcuri.Location = new System.Drawing.Point(442, 30);
-            this.lbl_ps3dlcuri.Name = "lbl_ps3dlcuri";
-            this.lbl_ps3dlcuri.Size = new System.Drawing.Size(44, 13);
-            this.lbl_ps3dlcuri.TabIndex = 42;
-            this.lbl_ps3dlcuri.Text = "PS3 tsv";
-            // 
-            // tb_ps3dlcuri
-            // 
-            this.tb_ps3dlcuri.Location = new System.Drawing.Point(487, 27);
-            this.tb_ps3dlcuri.Name = "tb_ps3dlcuri";
-            this.tb_ps3dlcuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_ps3dlcuri.TabIndex = 40;
-            // 
-            // btn_pspdlcuri
-            // 
-            this.btn_pspdlcuri.Location = new System.Drawing.Point(341, 49);
-            this.btn_pspdlcuri.Name = "btn_pspdlcuri";
-            this.btn_pspdlcuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_pspdlcuri.TabIndex = 38;
-            this.btn_pspdlcuri.Text = "Browse";
-            this.btn_pspdlcuri.UseVisualStyleBackColor = true;
-            this.btn_pspdlcuri.Click += new System.EventHandler(this.btn_pspdlcuri_Click);
-            // 
-            // lbl_pspdlcuri
-            // 
-            this.lbl_pspdlcuri.AutoSize = true;
-            this.lbl_pspdlcuri.Location = new System.Drawing.Point(5, 54);
-            this.lbl_pspdlcuri.Name = "lbl_pspdlcuri";
-            this.lbl_pspdlcuri.Size = new System.Drawing.Size(45, 13);
-            this.lbl_pspdlcuri.TabIndex = 39;
-            this.lbl_pspdlcuri.Text = "PSP tsv";
-            // 
-            // tb_pspdlcuri
-            // 
-            this.tb_pspdlcuri.Location = new System.Drawing.Point(76, 51);
-            this.tb_pspdlcuri.Name = "tb_pspdlcuri";
-            this.tb_pspdlcuri.Size = new System.Drawing.Size(259, 20);
-            this.tb_pspdlcuri.TabIndex = 37;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lbl_ps4uri);
-            this.groupBox2.Controls.Add(this.tb_ps4uri);
-            this.groupBox2.Controls.Add(this.btn_ps4uri);
-            this.groupBox2.Controls.Add(this.tb_psvuri);
-            this.groupBox2.Controls.Add(this.lbl_psvuri);
-            this.groupBox2.Controls.Add(this.btn_psvuri);
-            this.groupBox2.Controls.Add(this.tb_psmuri);
-            this.groupBox2.Controls.Add(this.lbl_psmuri);
-            this.groupBox2.Controls.Add(this.btn_psmuri);
-            this.groupBox2.Controls.Add(this.tb_psxuri);
-            this.groupBox2.Controls.Add(this.lbl_pspuri);
-            this.groupBox2.Controls.Add(this.lbl_ps3uri);
-            this.groupBox2.Controls.Add(this.btn_pspuri);
-            this.groupBox2.Controls.Add(this.lbl_psxuri);
-            this.groupBox2.Controls.Add(this.tb_pspuri);
-            this.groupBox2.Controls.Add(this.tb_ps3uri);
-            this.groupBox2.Controls.Add(this.btn_ps3uri);
-            this.groupBox2.Controls.Add(this.btn_psxuri);
-            this.groupBox2.Location = new System.Drawing.Point(7, 20);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(835, 100);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Games";
-            // 
-            // lbl_ps4uri
-            // 
-            this.lbl_ps4uri.AutoSize = true;
-            this.lbl_ps4uri.Location = new System.Drawing.Point(441, 74);
-            this.lbl_ps4uri.Name = "lbl_ps4uri";
-            this.lbl_ps4uri.Size = new System.Drawing.Size(44, 13);
-            this.lbl_ps4uri.TabIndex = 36;
-            this.lbl_ps4uri.Text = "PS4 tsv";
-            this.lbl_ps4uri.Visible = false;
-            // 
-            // tb_ps4uri
-            // 
-            this.tb_ps4uri.Location = new System.Drawing.Point(487, 70);
-            this.tb_ps4uri.Name = "tb_ps4uri";
-            this.tb_ps4uri.Size = new System.Drawing.Size(258, 20);
-            this.tb_ps4uri.TabIndex = 34;
-            this.tb_ps4uri.Visible = false;
-            // 
-            // btn_ps4uri
-            // 
-            this.btn_ps4uri.Location = new System.Drawing.Point(751, 67);
-            this.btn_ps4uri.Name = "btn_ps4uri";
-            this.btn_ps4uri.Size = new System.Drawing.Size(75, 23);
-            this.btn_ps4uri.TabIndex = 35;
-            this.btn_ps4uri.Text = "Browse";
-            this.btn_ps4uri.UseVisualStyleBackColor = true;
-            this.btn_ps4uri.Visible = false;
-            this.btn_ps4uri.Click += new System.EventHandler(this.btn_ps4uri_Click);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.btn_ps4thmuri);
-            this.groupBox4.Controls.Add(this.lbl_ps4thmuri);
-            this.groupBox4.Controls.Add(this.tb_ps4thmuri);
-            this.groupBox4.Controls.Add(this.btn_pspthmuri);
-            this.groupBox4.Controls.Add(this.lbl_pspthmuri);
-            this.groupBox4.Controls.Add(this.tb_pspthmuri);
-            this.groupBox4.Controls.Add(this.lbl_psvthmuri);
-            this.groupBox4.Controls.Add(this.btn_ps3thmuri);
-            this.groupBox4.Controls.Add(this.lbl_ps3thmuri);
-            this.groupBox4.Controls.Add(this.tb_psvthmuri);
-            this.groupBox4.Controls.Add(this.btn_psvthmuri);
-            this.groupBox4.Controls.Add(this.tb_ps3thmuri);
-            this.groupBox4.Location = new System.Drawing.Point(7, 213);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(835, 53);
-            this.groupBox4.TabIndex = 2;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Themes";
-            // 
-            // btn_ps4thmuri
-            // 
-            this.btn_ps4thmuri.Location = new System.Drawing.Point(751, 46);
-            this.btn_ps4thmuri.Name = "btn_ps4thmuri";
-            this.btn_ps4thmuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_ps4thmuri.TabIndex = 41;
-            this.btn_ps4thmuri.Text = "Browse";
-            this.btn_ps4thmuri.UseVisualStyleBackColor = true;
-            this.btn_ps4thmuri.Visible = false;
-            this.btn_ps4thmuri.Click += new System.EventHandler(this.btn_ps4thmuri_Click);
-            // 
-            // lbl_ps4thmuri
-            // 
-            this.lbl_ps4thmuri.AutoSize = true;
-            this.lbl_ps4thmuri.Location = new System.Drawing.Point(440, 51);
-            this.lbl_ps4thmuri.Name = "lbl_ps4thmuri";
-            this.lbl_ps4thmuri.Size = new System.Drawing.Size(44, 13);
-            this.lbl_ps4thmuri.TabIndex = 42;
-            this.lbl_ps4thmuri.Text = "PS4 tsv";
-            this.lbl_ps4thmuri.Visible = false;
-            // 
-            // tb_ps4thmuri
-            // 
-            this.tb_ps4thmuri.Location = new System.Drawing.Point(487, 48);
-            this.tb_ps4thmuri.Name = "tb_ps4thmuri";
-            this.tb_ps4thmuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_ps4thmuri.TabIndex = 40;
-            this.tb_ps4thmuri.Visible = false;
-            // 
-            // btn_pspthmuri
-            // 
-            this.btn_pspthmuri.Location = new System.Drawing.Point(341, 48);
-            this.btn_pspthmuri.Name = "btn_pspthmuri";
-            this.btn_pspthmuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_pspthmuri.TabIndex = 38;
-            this.btn_pspthmuri.Text = "Browse";
-            this.btn_pspthmuri.UseVisualStyleBackColor = true;
-            this.btn_pspthmuri.Visible = false;
-            this.btn_pspthmuri.Click += new System.EventHandler(this.btn_pspthmuri_Click);
-            // 
-            // lbl_pspthmuri
-            // 
-            this.lbl_pspthmuri.AutoSize = true;
-            this.lbl_pspthmuri.Location = new System.Drawing.Point(6, 51);
-            this.lbl_pspthmuri.Name = "lbl_pspthmuri";
-            this.lbl_pspthmuri.Size = new System.Drawing.Size(45, 13);
-            this.lbl_pspthmuri.TabIndex = 39;
-            this.lbl_pspthmuri.Text = "PSP tsv";
-            this.lbl_pspthmuri.Visible = false;
-            // 
-            // tb_pspthmuri
-            // 
-            this.tb_pspthmuri.Location = new System.Drawing.Point(77, 48);
-            this.tb_pspthmuri.Name = "tb_pspthmuri";
-            this.tb_pspthmuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_pspthmuri.TabIndex = 37;
-            this.tb_pspthmuri.Visible = false;
-            // 
-            // lbl_psvthmuri
-            // 
-            this.lbl_psvthmuri.AutoSize = true;
-            this.lbl_psvthmuri.Location = new System.Drawing.Point(5, 27);
-            this.lbl_psvthmuri.Name = "lbl_psvthmuri";
-            this.lbl_psvthmuri.Size = new System.Drawing.Size(45, 13);
-            this.lbl_psvthmuri.TabIndex = 14;
-            this.lbl_psvthmuri.Text = "PSV tsv";
-            // 
-            // btn_ps3thmuri
-            // 
-            this.btn_ps3thmuri.Location = new System.Drawing.Point(751, 22);
-            this.btn_ps3thmuri.Name = "btn_ps3thmuri";
-            this.btn_ps3thmuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_ps3thmuri.TabIndex = 3;
-            this.btn_ps3thmuri.Text = "Browse";
-            this.btn_ps3thmuri.UseVisualStyleBackColor = true;
-            this.btn_ps3thmuri.Visible = false;
-            this.btn_ps3thmuri.Click += new System.EventHandler(this.btn_ps3thmuri_Click);
-            // 
-            // lbl_ps3thmuri
-            // 
-            this.lbl_ps3thmuri.AutoSize = true;
-            this.lbl_ps3thmuri.Location = new System.Drawing.Point(440, 27);
-            this.lbl_ps3thmuri.Name = "lbl_ps3thmuri";
-            this.lbl_ps3thmuri.Size = new System.Drawing.Size(44, 13);
-            this.lbl_ps3thmuri.TabIndex = 36;
-            this.lbl_ps3thmuri.Text = "PS3 tsv";
-            this.lbl_ps3thmuri.Visible = false;
-            // 
-            // tb_psvthmuri
-            // 
-            this.tb_psvthmuri.Location = new System.Drawing.Point(77, 24);
-            this.tb_psvthmuri.Name = "tb_psvthmuri";
-            this.tb_psvthmuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_psvthmuri.TabIndex = 0;
-            // 
-            // btn_psvthmuri
-            // 
-            this.btn_psvthmuri.Location = new System.Drawing.Point(341, 22);
-            this.btn_psvthmuri.Name = "btn_psvthmuri";
-            this.btn_psvthmuri.Size = new System.Drawing.Size(75, 23);
-            this.btn_psvthmuri.TabIndex = 1;
-            this.btn_psvthmuri.Text = "Browse";
-            this.btn_psvthmuri.UseVisualStyleBackColor = true;
-            this.btn_psvthmuri.Click += new System.EventHandler(this.btn_psvthmuri_Click);
-            // 
-            // tb_ps3thmuri
-            // 
-            this.tb_ps3thmuri.Location = new System.Drawing.Point(487, 24);
-            this.tb_ps3thmuri.Name = "tb_ps3thmuri";
-            this.tb_ps3thmuri.Size = new System.Drawing.Size(258, 20);
-            this.tb_ps3thmuri.TabIndex = 2;
-            this.tb_ps3thmuri.Visible = false;
             // 
             // groupBox6
             // 
@@ -938,10 +480,470 @@ namespace NPS
             this.tb_compackPatch.Size = new System.Drawing.Size(344, 20);
             this.tb_compackPatch.TabIndex = 46;
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(8, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(845, 245);
+            this.tabControl1.TabIndex = 47;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.Controls.Add(this.lbl_ps4uri);
+            this.tabPage1.Controls.Add(this.tb_ps4uri);
+            this.tabPage1.Controls.Add(this.btn_ps4uri);
+            this.tabPage1.Controls.Add(this.tb_psvuri);
+            this.tabPage1.Controls.Add(this.lbl_psvuri);
+            this.tabPage1.Controls.Add(this.btn_psvuri);
+            this.tabPage1.Controls.Add(this.tb_psmuri);
+            this.tabPage1.Controls.Add(this.lbl_psmuri);
+            this.tabPage1.Controls.Add(this.btn_psmuri);
+            this.tabPage1.Controls.Add(this.tb_psxuri);
+            this.tabPage1.Controls.Add(this.lbl_pspuri);
+            this.tabPage1.Controls.Add(this.lbl_ps3uri);
+            this.tabPage1.Controls.Add(this.btn_pspuri);
+            this.tabPage1.Controls.Add(this.lbl_psxuri);
+            this.tabPage1.Controls.Add(this.tb_pspuri);
+            this.tabPage1.Controls.Add(this.tb_ps3uri);
+            this.tabPage1.Controls.Add(this.btn_ps3uri);
+            this.tabPage1.Controls.Add(this.btn_psxuri);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(837, 219);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Jogos";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.Controls.Add(this.btn_ps4dlcuri);
+            this.tabPage2.Controls.Add(this.lbl_ps4dlcuri);
+            this.tabPage2.Controls.Add(this.tb_ps4dlcuri);
+            this.tabPage2.Controls.Add(this.btn_ps3dlcuri);
+            this.tabPage2.Controls.Add(this.lbl_ps3dlcuri);
+            this.tabPage2.Controls.Add(this.tb_ps3dlcuri);
+            this.tabPage2.Controls.Add(this.btn_pspdlcuri);
+            this.tabPage2.Controls.Add(this.lbl_pspdlcuri);
+            this.tabPage2.Controls.Add(this.tb_pspdlcuri);
+            this.tabPage2.Controls.Add(this.lbl_psvdlcuri);
+            this.tabPage2.Controls.Add(this.tb_psvdlcuri);
+            this.tabPage2.Controls.Add(this.btn_psvdlcuri);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(837, 219);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "DLCs";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage3.Controls.Add(this.btn_ps4thmuri);
+            this.tabPage3.Controls.Add(this.lbl_ps4thmuri);
+            this.tabPage3.Controls.Add(this.tb_ps4thmuri);
+            this.tabPage3.Controls.Add(this.btn_pspthmuri);
+            this.tabPage3.Controls.Add(this.lbl_pspthmuri);
+            this.tabPage3.Controls.Add(this.tb_pspthmuri);
+            this.tabPage3.Controls.Add(this.lbl_psvthmuri);
+            this.tabPage3.Controls.Add(this.btn_ps3thmuri);
+            this.tabPage3.Controls.Add(this.lbl_ps3thmuri);
+            this.tabPage3.Controls.Add(this.tb_psvthmuri);
+            this.tabPage3.Controls.Add(this.btn_psvthmuri);
+            this.tabPage3.Controls.Add(this.tb_ps3thmuri);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(837, 219);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Temas";
+            // 
+            // btn_ps4dlcuri
+            // 
+            this.btn_ps4dlcuri.Location = new System.Drawing.Point(752, 35);
+            this.btn_ps4dlcuri.Name = "btn_ps4dlcuri";
+            this.btn_ps4dlcuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_ps4dlcuri.TabIndex = 56;
+            this.btn_ps4dlcuri.Text = "Browse";
+            this.btn_ps4dlcuri.UseVisualStyleBackColor = true;
+            this.btn_ps4dlcuri.Visible = false;
+            // 
+            // lbl_ps4dlcuri
+            // 
+            this.lbl_ps4dlcuri.AutoSize = true;
+            this.lbl_ps4dlcuri.Location = new System.Drawing.Point(443, 40);
+            this.lbl_ps4dlcuri.Name = "lbl_ps4dlcuri";
+            this.lbl_ps4dlcuri.Size = new System.Drawing.Size(44, 13);
+            this.lbl_ps4dlcuri.TabIndex = 57;
+            this.lbl_ps4dlcuri.Text = "PS4 tsv";
+            this.lbl_ps4dlcuri.Visible = false;
+            // 
+            // tb_ps4dlcuri
+            // 
+            this.tb_ps4dlcuri.Location = new System.Drawing.Point(488, 37);
+            this.tb_ps4dlcuri.Name = "tb_ps4dlcuri";
+            this.tb_ps4dlcuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_ps4dlcuri.TabIndex = 55;
+            this.tb_ps4dlcuri.Visible = false;
+            // 
+            // btn_ps3dlcuri
+            // 
+            this.btn_ps3dlcuri.Location = new System.Drawing.Point(752, 11);
+            this.btn_ps3dlcuri.Name = "btn_ps3dlcuri";
+            this.btn_ps3dlcuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_ps3dlcuri.TabIndex = 53;
+            this.btn_ps3dlcuri.Text = "Browse";
+            this.btn_ps3dlcuri.UseVisualStyleBackColor = true;
+            // 
+            // lbl_ps3dlcuri
+            // 
+            this.lbl_ps3dlcuri.AutoSize = true;
+            this.lbl_ps3dlcuri.Location = new System.Drawing.Point(443, 16);
+            this.lbl_ps3dlcuri.Name = "lbl_ps3dlcuri";
+            this.lbl_ps3dlcuri.Size = new System.Drawing.Size(44, 13);
+            this.lbl_ps3dlcuri.TabIndex = 54;
+            this.lbl_ps3dlcuri.Text = "PS3 tsv";
+            // 
+            // tb_ps3dlcuri
+            // 
+            this.tb_ps3dlcuri.Location = new System.Drawing.Point(488, 13);
+            this.tb_ps3dlcuri.Name = "tb_ps3dlcuri";
+            this.tb_ps3dlcuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_ps3dlcuri.TabIndex = 52;
+            // 
+            // btn_pspdlcuri
+            // 
+            this.btn_pspdlcuri.Location = new System.Drawing.Point(342, 35);
+            this.btn_pspdlcuri.Name = "btn_pspdlcuri";
+            this.btn_pspdlcuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_pspdlcuri.TabIndex = 50;
+            this.btn_pspdlcuri.Text = "Browse";
+            this.btn_pspdlcuri.UseVisualStyleBackColor = true;
+            // 
+            // lbl_pspdlcuri
+            // 
+            this.lbl_pspdlcuri.AutoSize = true;
+            this.lbl_pspdlcuri.Location = new System.Drawing.Point(6, 40);
+            this.lbl_pspdlcuri.Name = "lbl_pspdlcuri";
+            this.lbl_pspdlcuri.Size = new System.Drawing.Size(45, 13);
+            this.lbl_pspdlcuri.TabIndex = 51;
+            this.lbl_pspdlcuri.Text = "PSP tsv";
+            // 
+            // tb_pspdlcuri
+            // 
+            this.tb_pspdlcuri.Location = new System.Drawing.Point(77, 37);
+            this.tb_pspdlcuri.Name = "tb_pspdlcuri";
+            this.tb_pspdlcuri.Size = new System.Drawing.Size(259, 20);
+            this.tb_pspdlcuri.TabIndex = 49;
+            // 
+            // lbl_psvdlcuri
+            // 
+            this.lbl_psvdlcuri.AutoSize = true;
+            this.lbl_psvdlcuri.Location = new System.Drawing.Point(6, 13);
+            this.lbl_psvdlcuri.Name = "lbl_psvdlcuri";
+            this.lbl_psvdlcuri.Size = new System.Drawing.Size(45, 13);
+            this.lbl_psvdlcuri.TabIndex = 48;
+            this.lbl_psvdlcuri.Text = "PSV tsv";
+            // 
+            // tb_psvdlcuri
+            // 
+            this.tb_psvdlcuri.Location = new System.Drawing.Point(78, 10);
+            this.tb_psvdlcuri.Name = "tb_psvdlcuri";
+            this.tb_psvdlcuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_psvdlcuri.TabIndex = 46;
+            // 
+            // btn_psvdlcuri
+            // 
+            this.btn_psvdlcuri.Location = new System.Drawing.Point(342, 10);
+            this.btn_psvdlcuri.Name = "btn_psvdlcuri";
+            this.btn_psvdlcuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_psvdlcuri.TabIndex = 47;
+            this.btn_psvdlcuri.Text = "Browse";
+            this.btn_psvdlcuri.UseVisualStyleBackColor = true;
+            // 
+            // lbl_ps4uri
+            // 
+            this.lbl_ps4uri.AutoSize = true;
+            this.lbl_ps4uri.Location = new System.Drawing.Point(438, 64);
+            this.lbl_ps4uri.Name = "lbl_ps4uri";
+            this.lbl_ps4uri.Size = new System.Drawing.Size(44, 13);
+            this.lbl_ps4uri.TabIndex = 54;
+            this.lbl_ps4uri.Text = "PS4 tsv";
+            this.lbl_ps4uri.Visible = false;
+            // 
+            // tb_ps4uri
+            // 
+            this.tb_ps4uri.Location = new System.Drawing.Point(484, 60);
+            this.tb_ps4uri.Name = "tb_ps4uri";
+            this.tb_ps4uri.Size = new System.Drawing.Size(258, 20);
+            this.tb_ps4uri.TabIndex = 52;
+            this.tb_ps4uri.Visible = false;
+            // 
+            // btn_ps4uri
+            // 
+            this.btn_ps4uri.Location = new System.Drawing.Point(748, 57);
+            this.btn_ps4uri.Name = "btn_ps4uri";
+            this.btn_ps4uri.Size = new System.Drawing.Size(75, 23);
+            this.btn_ps4uri.TabIndex = 53;
+            this.btn_ps4uri.Text = "Browse";
+            this.btn_ps4uri.UseVisualStyleBackColor = true;
+            this.btn_ps4uri.Visible = false;
+            // 
+            // tb_psvuri
+            // 
+            this.tb_psvuri.Location = new System.Drawing.Point(74, 9);
+            this.tb_psvuri.Name = "tb_psvuri";
+            this.tb_psvuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_psvuri.TabIndex = 37;
+            // 
+            // lbl_psvuri
+            // 
+            this.lbl_psvuri.AutoSize = true;
+            this.lbl_psvuri.Location = new System.Drawing.Point(6, 12);
+            this.lbl_psvuri.Name = "lbl_psvuri";
+            this.lbl_psvuri.Size = new System.Drawing.Size(45, 13);
+            this.lbl_psvuri.TabIndex = 47;
+            this.lbl_psvuri.Text = "PSV tsv";
+            // 
+            // btn_psvuri
+            // 
+            this.btn_psvuri.Location = new System.Drawing.Point(338, 7);
+            this.btn_psvuri.Name = "btn_psvuri";
+            this.btn_psvuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_psvuri.TabIndex = 38;
+            this.btn_psvuri.Text = "Browse";
+            this.btn_psvuri.UseVisualStyleBackColor = true;
+            // 
+            // tb_psmuri
+            // 
+            this.tb_psmuri.Location = new System.Drawing.Point(74, 35);
+            this.tb_psmuri.Name = "tb_psmuri";
+            this.tb_psmuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_psmuri.TabIndex = 39;
+            // 
+            // lbl_psmuri
+            // 
+            this.lbl_psmuri.AutoSize = true;
+            this.lbl_psmuri.Location = new System.Drawing.Point(6, 38);
+            this.lbl_psmuri.Name = "lbl_psmuri";
+            this.lbl_psmuri.Size = new System.Drawing.Size(47, 13);
+            this.lbl_psmuri.TabIndex = 48;
+            this.lbl_psmuri.Text = "PSM tsv";
+            // 
+            // btn_psmuri
+            // 
+            this.btn_psmuri.Location = new System.Drawing.Point(338, 32);
+            this.btn_psmuri.Name = "btn_psmuri";
+            this.btn_psmuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_psmuri.TabIndex = 40;
+            this.btn_psmuri.Text = "Browse";
+            this.btn_psmuri.UseVisualStyleBackColor = true;
+            // 
+            // tb_psxuri
+            // 
+            this.tb_psxuri.Location = new System.Drawing.Point(74, 59);
+            this.tb_psxuri.Name = "tb_psxuri";
+            this.tb_psxuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_psxuri.TabIndex = 41;
+            // 
+            // lbl_pspuri
+            // 
+            this.lbl_pspuri.AutoSize = true;
+            this.lbl_pspuri.Location = new System.Drawing.Point(437, 12);
+            this.lbl_pspuri.Name = "lbl_pspuri";
+            this.lbl_pspuri.Size = new System.Drawing.Size(45, 13);
+            this.lbl_pspuri.TabIndex = 50;
+            this.lbl_pspuri.Text = "PSP tsv";
+            // 
+            // lbl_ps3uri
+            // 
+            this.lbl_ps3uri.AutoSize = true;
+            this.lbl_ps3uri.Location = new System.Drawing.Point(437, 37);
+            this.lbl_ps3uri.Name = "lbl_ps3uri";
+            this.lbl_ps3uri.Size = new System.Drawing.Size(44, 13);
+            this.lbl_ps3uri.TabIndex = 51;
+            this.lbl_ps3uri.Text = "PS3 tsv";
+            // 
+            // btn_pspuri
+            // 
+            this.btn_pspuri.Location = new System.Drawing.Point(748, 6);
+            this.btn_pspuri.Name = "btn_pspuri";
+            this.btn_pspuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_pspuri.TabIndex = 46;
+            this.btn_pspuri.Text = "Browse";
+            this.btn_pspuri.UseVisualStyleBackColor = true;
+            // 
+            // lbl_psxuri
+            // 
+            this.lbl_psxuri.AutoSize = true;
+            this.lbl_psxuri.Location = new System.Drawing.Point(6, 64);
+            this.lbl_psxuri.Name = "lbl_psxuri";
+            this.lbl_psxuri.Size = new System.Drawing.Size(45, 13);
+            this.lbl_psxuri.TabIndex = 49;
+            this.lbl_psxuri.Text = "PSX tsv";
+            // 
+            // tb_pspuri
+            // 
+            this.tb_pspuri.Location = new System.Drawing.Point(484, 8);
+            this.tb_pspuri.Name = "tb_pspuri";
+            this.tb_pspuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_pspuri.TabIndex = 45;
+            // 
+            // tb_ps3uri
+            // 
+            this.tb_ps3uri.Location = new System.Drawing.Point(484, 34);
+            this.tb_ps3uri.Name = "tb_ps3uri";
+            this.tb_ps3uri.Size = new System.Drawing.Size(258, 20);
+            this.tb_ps3uri.TabIndex = 43;
+            // 
+            // btn_ps3uri
+            // 
+            this.btn_ps3uri.Location = new System.Drawing.Point(748, 31);
+            this.btn_ps3uri.Name = "btn_ps3uri";
+            this.btn_ps3uri.Size = new System.Drawing.Size(75, 23);
+            this.btn_ps3uri.TabIndex = 44;
+            this.btn_ps3uri.Text = "Browse";
+            this.btn_ps3uri.UseVisualStyleBackColor = true;
+            // 
+            // btn_psxuri
+            // 
+            this.btn_psxuri.Location = new System.Drawing.Point(338, 56);
+            this.btn_psxuri.Name = "btn_psxuri";
+            this.btn_psxuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_psxuri.TabIndex = 42;
+            this.btn_psxuri.Text = "Browse";
+            this.btn_psxuri.UseVisualStyleBackColor = true;
+            // 
+            // btn_ps4thmuri
+            // 
+            this.btn_ps4thmuri.Location = new System.Drawing.Point(752, 32);
+            this.btn_ps4thmuri.Name = "btn_ps4thmuri";
+            this.btn_ps4thmuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_ps4thmuri.TabIndex = 53;
+            this.btn_ps4thmuri.Text = "Browse";
+            this.btn_ps4thmuri.UseVisualStyleBackColor = true;
+            this.btn_ps4thmuri.Visible = false;
+            // 
+            // lbl_ps4thmuri
+            // 
+            this.lbl_ps4thmuri.AutoSize = true;
+            this.lbl_ps4thmuri.Location = new System.Drawing.Point(441, 37);
+            this.lbl_ps4thmuri.Name = "lbl_ps4thmuri";
+            this.lbl_ps4thmuri.Size = new System.Drawing.Size(44, 13);
+            this.lbl_ps4thmuri.TabIndex = 54;
+            this.lbl_ps4thmuri.Text = "PS4 tsv";
+            this.lbl_ps4thmuri.Visible = false;
+            // 
+            // tb_ps4thmuri
+            // 
+            this.tb_ps4thmuri.Location = new System.Drawing.Point(488, 34);
+            this.tb_ps4thmuri.Name = "tb_ps4thmuri";
+            this.tb_ps4thmuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_ps4thmuri.TabIndex = 52;
+            this.tb_ps4thmuri.Visible = false;
+            // 
+            // btn_pspthmuri
+            // 
+            this.btn_pspthmuri.Location = new System.Drawing.Point(342, 34);
+            this.btn_pspthmuri.Name = "btn_pspthmuri";
+            this.btn_pspthmuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_pspthmuri.TabIndex = 50;
+            this.btn_pspthmuri.Text = "Browse";
+            this.btn_pspthmuri.UseVisualStyleBackColor = true;
+            this.btn_pspthmuri.Visible = false;
+            // 
+            // lbl_pspthmuri
+            // 
+            this.lbl_pspthmuri.AutoSize = true;
+            this.lbl_pspthmuri.Location = new System.Drawing.Point(7, 37);
+            this.lbl_pspthmuri.Name = "lbl_pspthmuri";
+            this.lbl_pspthmuri.Size = new System.Drawing.Size(45, 13);
+            this.lbl_pspthmuri.TabIndex = 51;
+            this.lbl_pspthmuri.Text = "PSP tsv";
+            this.lbl_pspthmuri.Visible = false;
+            // 
+            // tb_pspthmuri
+            // 
+            this.tb_pspthmuri.Location = new System.Drawing.Point(78, 34);
+            this.tb_pspthmuri.Name = "tb_pspthmuri";
+            this.tb_pspthmuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_pspthmuri.TabIndex = 49;
+            this.tb_pspthmuri.Visible = false;
+            // 
+            // lbl_psvthmuri
+            // 
+            this.lbl_psvthmuri.AutoSize = true;
+            this.lbl_psvthmuri.Location = new System.Drawing.Point(6, 13);
+            this.lbl_psvthmuri.Name = "lbl_psvthmuri";
+            this.lbl_psvthmuri.Size = new System.Drawing.Size(45, 13);
+            this.lbl_psvthmuri.TabIndex = 47;
+            this.lbl_psvthmuri.Text = "PSV tsv";
+            // 
+            // btn_ps3thmuri
+            // 
+            this.btn_ps3thmuri.Location = new System.Drawing.Point(752, 8);
+            this.btn_ps3thmuri.Name = "btn_ps3thmuri";
+            this.btn_ps3thmuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_ps3thmuri.TabIndex = 46;
+            this.btn_ps3thmuri.Text = "Browse";
+            this.btn_ps3thmuri.UseVisualStyleBackColor = true;
+            this.btn_ps3thmuri.Visible = false;
+            // 
+            // lbl_ps3thmuri
+            // 
+            this.lbl_ps3thmuri.AutoSize = true;
+            this.lbl_ps3thmuri.Location = new System.Drawing.Point(441, 13);
+            this.lbl_ps3thmuri.Name = "lbl_ps3thmuri";
+            this.lbl_ps3thmuri.Size = new System.Drawing.Size(44, 13);
+            this.lbl_ps3thmuri.TabIndex = 48;
+            this.lbl_ps3thmuri.Text = "PS3 tsv";
+            this.lbl_ps3thmuri.Visible = false;
+            // 
+            // tb_psvthmuri
+            // 
+            this.tb_psvthmuri.Location = new System.Drawing.Point(78, 10);
+            this.tb_psvthmuri.Name = "tb_psvthmuri";
+            this.tb_psvthmuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_psvthmuri.TabIndex = 43;
+            // 
+            // btn_psvthmuri
+            // 
+            this.btn_psvthmuri.Location = new System.Drawing.Point(342, 8);
+            this.btn_psvthmuri.Name = "btn_psvthmuri";
+            this.btn_psvthmuri.Size = new System.Drawing.Size(75, 23);
+            this.btn_psvthmuri.TabIndex = 44;
+            this.btn_psvthmuri.Text = "Browse";
+            this.btn_psvthmuri.UseVisualStyleBackColor = true;
+            // 
+            // tb_ps3thmuri
+            // 
+            this.tb_ps3thmuri.Location = new System.Drawing.Point(488, 10);
+            this.tb_ps3thmuri.Name = "tb_ps3thmuri";
+            this.tb_ps3thmuri.Size = new System.Drawing.Size(258, 20);
+            this.tb_ps3thmuri.TabIndex = 45;
+            this.tb_ps3thmuri.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(193, 209);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(463, 39);
+            this.label10.TabIndex = 55;
+            this.label10.Text = "Use Arquivos TSV ou Links";
+            // 
             // Options
             // 
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(873, 611);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tb_compackPatch);
             this.Controls.Add(this.label8);
@@ -952,7 +954,6 @@ namespace NPS
             this.Controls.Add(this.lblCacheDate);
             this.Controls.Add(this.btnSyncNow);
             this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.numericUpDown1);
@@ -973,19 +974,19 @@ namespace NPS
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Options_FormClosing);
             this.Load += new System.EventHandler(this.Options_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1007,64 +1008,18 @@ namespace NPS
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textParams;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label lbl_psvuri;
-        private System.Windows.Forms.TextBox tb_psvuri;
-        private System.Windows.Forms.Button btn_psvuri;
-        private System.Windows.Forms.Label lbl_psvdlcuri;
-        private System.Windows.Forms.TextBox tb_psvdlcuri;
-        private System.Windows.Forms.Button btn_psvdlcuri;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label lbl_psmuri;
-        private System.Windows.Forms.TextBox tb_psmuri;
-        private System.Windows.Forms.Button btn_psmuri;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label lbl_psxuri;
-        private System.Windows.Forms.TextBox tb_psxuri;
-        private System.Windows.Forms.Button btn_psxuri;
-        private System.Windows.Forms.Label lbl_pspuri;
-        private System.Windows.Forms.TextBox tb_pspuri;
-        private System.Windows.Forms.Button btn_pspuri;
-        private System.Windows.Forms.Label lbl_ps3uri;
-        private System.Windows.Forms.TextBox tb_ps3uri;
-        private System.Windows.Forms.Button btn_ps3uri;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox2;
-		private System.Windows.Forms.Button btn_pspdlcuri;
-		private System.Windows.Forms.Label lbl_pspdlcuri;
-		private System.Windows.Forms.TextBox tb_pspdlcuri;
-		private System.Windows.Forms.GroupBox groupBox4;
-		private System.Windows.Forms.Button btn_pspthmuri;
-		private System.Windows.Forms.Label lbl_pspthmuri;
-		private System.Windows.Forms.TextBox tb_pspthmuri;
-		private System.Windows.Forms.Label lbl_psvthmuri;
-		private System.Windows.Forms.Button btn_ps3thmuri;
-		private System.Windows.Forms.Label lbl_ps3thmuri;
-		private System.Windows.Forms.TextBox tb_psvthmuri;
-		private System.Windows.Forms.Button btn_psvthmuri;
-		private System.Windows.Forms.TextBox tb_ps3thmuri;
 		private System.Windows.Forms.GroupBox groupBox5;
 		private System.Windows.Forms.Label lbl_psvupduri;
 		private System.Windows.Forms.TextBox tb_psvupduri;
 		private System.Windows.Forms.Button btn_psvupduri;
-		private System.Windows.Forms.Label lbl_ps4uri;
-		private System.Windows.Forms.TextBox tb_ps4uri;
-		private System.Windows.Forms.Button btn_ps4uri;
 		private System.Windows.Forms.GroupBox groupBox6;
 		private System.Windows.Forms.TextBox tb_ps3avataruri;
 		private System.Windows.Forms.Label lbl_ps3avataruri;
 		private System.Windows.Forms.Button btn_ps3avataruri;
-		private System.Windows.Forms.Button btn_ps4dlcuri;
-		private System.Windows.Forms.Label lbl_ps4dlcuri;
-		private System.Windows.Forms.TextBox tb_ps4dlcuri;
-		private System.Windows.Forms.Button btn_ps3dlcuri;
-		private System.Windows.Forms.Label lbl_ps3dlcuri;
-		private System.Windows.Forms.TextBox tb_ps3dlcuri;
-		private System.Windows.Forms.Button btn_ps4thmuri;
-		private System.Windows.Forms.Label lbl_ps4thmuri;
-		private System.Windows.Forms.TextBox tb_ps4thmuri;
 		private System.Windows.Forms.Label lbl_ps4upduri;
 		private System.Windows.Forms.TextBox tb_ps4upduri;
 		private System.Windows.Forms.Button btn_ps4upduri;
@@ -1082,6 +1037,53 @@ namespace NPS
         private System.Windows.Forms.TextBox tb_compPack;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tb_compackPatch;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label lbl_ps4uri;
+        private System.Windows.Forms.TextBox tb_ps4uri;
+        private System.Windows.Forms.Button btn_ps4uri;
+        private System.Windows.Forms.TextBox tb_psvuri;
+        private System.Windows.Forms.Label lbl_psvuri;
+        private System.Windows.Forms.Button btn_psvuri;
+        private System.Windows.Forms.TextBox tb_psmuri;
+        private System.Windows.Forms.Label lbl_psmuri;
+        private System.Windows.Forms.Button btn_psmuri;
+        private System.Windows.Forms.TextBox tb_psxuri;
+        private System.Windows.Forms.Label lbl_pspuri;
+        private System.Windows.Forms.Label lbl_ps3uri;
+        private System.Windows.Forms.Button btn_pspuri;
+        private System.Windows.Forms.Label lbl_psxuri;
+        private System.Windows.Forms.TextBox tb_pspuri;
+        private System.Windows.Forms.TextBox tb_ps3uri;
+        private System.Windows.Forms.Button btn_ps3uri;
+        private System.Windows.Forms.Button btn_psxuri;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button btn_ps4dlcuri;
+        private System.Windows.Forms.Label lbl_ps4dlcuri;
+        private System.Windows.Forms.TextBox tb_ps4dlcuri;
+        private System.Windows.Forms.Button btn_ps3dlcuri;
+        private System.Windows.Forms.Label lbl_ps3dlcuri;
+        private System.Windows.Forms.TextBox tb_ps3dlcuri;
+        private System.Windows.Forms.Button btn_pspdlcuri;
+        private System.Windows.Forms.Label lbl_pspdlcuri;
+        private System.Windows.Forms.TextBox tb_pspdlcuri;
+        private System.Windows.Forms.Label lbl_psvdlcuri;
+        private System.Windows.Forms.TextBox tb_psvdlcuri;
+        private System.Windows.Forms.Button btn_psvdlcuri;
+        private System.Windows.Forms.Button btn_ps4thmuri;
+        private System.Windows.Forms.Label lbl_ps4thmuri;
+        private System.Windows.Forms.TextBox tb_ps4thmuri;
+        private System.Windows.Forms.Button btn_pspthmuri;
+        private System.Windows.Forms.Label lbl_pspthmuri;
+        private System.Windows.Forms.TextBox tb_pspthmuri;
+        private System.Windows.Forms.Label lbl_psvthmuri;
+        private System.Windows.Forms.Button btn_ps3thmuri;
+        private System.Windows.Forms.Label lbl_ps3thmuri;
+        private System.Windows.Forms.TextBox tb_psvthmuri;
+        private System.Windows.Forms.Button btn_psvthmuri;
+        private System.Windows.Forms.TextBox tb_ps3thmuri;
+        private System.Windows.Forms.Label label10;
     }
 }
 

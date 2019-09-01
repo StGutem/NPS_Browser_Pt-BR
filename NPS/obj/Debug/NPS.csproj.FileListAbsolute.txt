@@ -1,0 +1,16 @@
+C:\Users\Gutemberg\Desktop\source\NPS\bin\Debug\NPS_Browser.exe
+C:\Users\Gutemberg\Desktop\source\NPS\bin\Debug\NPS_Browser.pdb
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.csprojAssemblyReference.cache
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.CompPack.resources
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.Desc.resources
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\PresentationControls.PopupComboBox.resources
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.Library.resources
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.Options.resources
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.Properties.Resources.resources
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.NPSBrowser.resources
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.SyncDB.resources
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.GamePatches.resources
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.csproj.GenerateResource.cache
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS.csproj.CoreCompileInputs.cache
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS_Browser.exe
+C:\Users\Gutemberg\Desktop\source\NPS\obj\Debug\NPS_Browser.pdb

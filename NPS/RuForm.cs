@@ -555,7 +555,7 @@ namespace NPS
         {
             if (string.IsNullOrEmpty(Settings.Instance.downloadDir) || string.IsNullOrEmpty(Settings.Instance.pkgPath))
             {
-                MessageBox.Show("Você não tem uma configuração correta.", "Whoops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Você não tem uma configuração correta.", "Opa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Options o = new Options(this);
                 o.ShowDialog();
                 return;
@@ -658,9 +658,9 @@ namespace NPS
                     if (string.IsNullOrEmpty(itm.zRif))
                     {
                         lb_ps3licenseType.BackColor = Color.LawnGreen;
-                        lb_ps3licenseType.Text = "RAP NOT REQUIRED, use ReActPSN/PSNPatch";
+                        lb_ps3licenseType.Text = "RAP não é necessario, use o ReActPSN/PSNPatch";
                     }
-                    else if (itm.zRif.ToLower().Contains("UNLOCK/LICENSE BY DLC".ToLower())) lb_ps3licenseType.Text = "UNLOCK BY DLC";
+                    else if (itm.zRif.ToLower().Contains("Desbloqueado/Licenciado por DLC".ToLower())) lb_ps3licenseType.Text = "Desbloqueado por DLC";
                     else lb_ps3licenseType.Text = "";
                 }
                 else
@@ -1005,7 +1005,7 @@ namespace NPS
                     foreach (var c in r.changelog)
                         s += c + Environment.NewLine;
 
-                    MessageBox.Show(s, "Changelog " + r.version);
+                    MessageBox.Show(s, "Log de Mudanças " + r.version);
                 }
             }
         }
@@ -1018,7 +1018,7 @@ namespace NPS
             foreach (var s in r.changelog)
                 result += s + Environment.NewLine;
 
-            MessageBox.Show(result, "Changelog " + r.version);
+            MessageBox.Show(result, "Log de Mudanças " + r.version);
         }
 
         private void checkForPatchesToolStripMenuItem_Click(object sender, EventArgs e)

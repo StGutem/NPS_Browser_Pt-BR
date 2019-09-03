@@ -37,7 +37,7 @@ namespace NPS
         {
             currentDownload = itm;
             lvi = new ListViewItem(itm.TitleName);
-            lvi.SubItems.Add("Waiting");
+            lvi.SubItems.Add("Esperando");
             lvi.SubItems.Add("");
             lvi.SubItems.Add("");
             lvi.Tag = this;
@@ -71,14 +71,14 @@ namespace NPS
             else if (this.status == WorkerStatus.Completed)
             {
                 lvi.SubItems[1].Text = "";
-                lvi.SubItems[2].Text = "Completed";
+                lvi.SubItems[2].Text = "Completado";
             }
         }
 
 
         public void Start()
         {
-            Console.WriteLine("start process " + currentDownload.TitleName);
+            Console.WriteLine("Iniciando Processo " + currentDownload.TitleName);
             timer.Start();
             //isRunning = true;
             status = WorkerStatus.Running;
@@ -106,7 +106,7 @@ namespace NPS
             }
 
             lvi.SubItems[1].Text = "";
-            lvi.SubItems[2].Text = "Canceled";
+            lvi.SubItems[2].Text = "Cancelado";
             progressValue = 0;
             progress.Value = progressValue;
             DeletePkg();
@@ -132,7 +132,7 @@ namespace NPS
                     unpackProcess.Kill();
                 }
 
-                lvi.SubItems[1].Text = "Paused";
+                lvi.SubItems[1].Text = "Pausado";
             }
             //progress.Value = 0;
         }
@@ -141,7 +141,7 @@ namespace NPS
         {
             if (status == WorkerStatus.Paused || status == WorkerStatus.DownloadError)
             {
-                lvi.SubItems[1].Text = "Queued";
+                lvi.SubItems[1].Text = "Enfileirado";
                 status = WorkerStatus.Queued;
             }
         }
@@ -183,7 +183,7 @@ namespace NPS
 
             if (this.status == WorkerStatus.Downloaded || this.status == WorkerStatus.Completed)
             {
-                lvi.SubItems[2].Text = "Unpacking";
+                lvi.SubItems[2].Text = "Descompactando";
 
                 String tempName = "";
                 string dlc = "";
@@ -252,7 +252,7 @@ namespace NPS
                 this.status = WorkerStatus.Completed;
                 try
                 {
-                    lvi.SubItems[2].Text = "Processing";
+                    lvi.SubItems[2].Text = "Processando";
 
                     //if (Directory.Exists(Path.Combine(Settings.Instance.downloadDir, "rePatch", currentDownload.TitleId)))
                     //    Directory.Delete(Path.Combine(Settings.Instance.downloadDir, "rePatch", currentDownload.TitleId), true);
@@ -277,7 +277,7 @@ namespace NPS
 
                     //System.IO.Compression.ZipFile.ExtractToDirectory(Path.Combine(Settings.Instance.downloadDir, currentDownload.DownloadFileName + currentDownload.extension), Path.Combine(Settings.Instance.downloadDir, "rePatch", currentDownload.TitleId));
                     lvi.SubItems[1].Text = "";
-                    lvi.SubItems[2].Text = "Completed";
+                    lvi.SubItems[2].Text = "Completado";
                     if (!Settings.Instance.history.completedDownloading.Contains(this.currentDownload))
                         Settings.Instance.history.completedDownloading.Add(this.currentDownload);
 
@@ -286,7 +286,7 @@ namespace NPS
                 }
                 catch (Exception err)
                 {
-                    lvi.SubItems[1].Text = "Error!";
+                    lvi.SubItems[1].Text = "Erro!";
                     lvi.SubItems[2].Text = err.Message;
                 }
             }
@@ -299,7 +299,7 @@ namespace NPS
                 this.status = WorkerStatus.Completed;
                 try
                 {
-                    lvi.SubItems[2].Text = "Processing";
+                    lvi.SubItems[2].Text = "Processando";
                     string path = Settings.Instance.downloadDir + Path.DirectorySeparatorChar + "packages";
                     if (!Directory.Exists(path))
                     {
@@ -326,7 +326,7 @@ namespace NPS
                     }
 
                     lvi.SubItems[1].Text = "";
-                    lvi.SubItems[2].Text = "Completed";
+                    lvi.SubItems[2].Text = "Completado";
 
                     if (!Settings.Instance.history.completedDownloading.Contains(this.currentDownload))
                         Settings.Instance.history.completedDownloading.Add(this.currentDownload);
@@ -334,7 +334,7 @@ namespace NPS
                 }
                 catch (Exception err)
                 {
-                    lvi.SubItems[1].Text = "Error!";
+                    lvi.SubItems[1].Text = "Erro!";
                     lvi.SubItems[2].Text = err.Message;
                 }
 
@@ -358,7 +358,7 @@ namespace NPS
                 formCaller.Invoke(new Action(() =>
                 {
                     lvi.SubItems[1].Text = "";
-                    lvi.SubItems[2].Text = "Completed";
+                    lvi.SubItems[2].Text = "Completado";
 
                     if (!Settings.Instance.history.completedDownloading.Contains(this.currentDownload))
                         Settings.Instance.history.completedDownloading.Add(this.currentDownload);
@@ -371,7 +371,7 @@ namespace NPS
             {
                 formCaller.Invoke(new Action(() =>
                 {
-                    lvi.SubItems[1].Text = "PKG decrypt err!";
+                    lvi.SubItems[1].Text = "Erro na decriptação do PKG!";
                     lvi.SubItems[2].Text = "";
 
                     errors.Remove(null);
@@ -484,7 +484,7 @@ namespace NPS
                 formCaller.Invoke(new Action(() =>
                 {
                     this.Pause();
-                    MessageBox.Show("Unable to download \"" + currentDownload.TitleName + "\"." + Environment.NewLine + err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Impossivel baixar \"" + currentDownload.TitleName + "\"." + Environment.NewLine + err.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }));
 
             }
